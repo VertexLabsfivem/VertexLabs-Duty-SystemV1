@@ -1,4 +1,5 @@
-# VertexLabs-Duty-SystemV1 
+# vertexlabs-duty
+
 Standalone FiveM duty system using ACE permissions.
 
 ## Features
@@ -28,23 +29,9 @@ exec permissions_example.cfg
 
 ## ACE examples
 
-Use Discord role IDs or user IDs with `identifier.discord:`.
-
 ```cfg
 add_ace group.BCSO BCSO.dutysystem allow
-add_principal identifier.discord:YOUR_DISCORD_ROLE_ID group.BCSO
-
-add_ace group.LSPD LSPD.dutysystem allow
-add_principal identifier.discord:YOUR_DISCORD_ROLE_ID group.LSPD
-
-add_ace group.SASP SASP.dutysystem allow
-add_principal identifier.discord:YOUR_DISCORD_ROLE_ID group.SASP
-```
-
-If you prefer to assign permissions to a single Discord user instead of a role, use:
-
-```cfg
-add_principal identifier.discord:YOUR_DISCORD_USER_ID group.BCSO
+add_principal identifier.discord:YOUR_DISCORD_ID group.BCSO
 ```
 
 ## Commands
@@ -117,6 +104,5 @@ Then add to permissions:
 
 ```cfg
 add_ace group.FBI FBI.dutysystem allow
-add_principal identifier.discord:YOURR_DISCORDROLEID_ID group.FBI
+add_principal identifier.discord:YOUR_DISCORD_ID group.FBI
 ```
-  
